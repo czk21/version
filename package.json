@@ -1,0 +1,90 @@
+{
+    "name": "common-vue",
+    "private": true,
+    "license": "MIT",
+    "main": "dist/electron/main/index.js",
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "electron:build": "vite build && electron-builder",
+        "preview": "vite preview"
+    },
+    "engines": {
+        "node": "^14.18.0 || >=16.0.0"
+    },
+    "asar": true,
+    "asarUnpack": [
+        "dist/electron/**/*",
+        "!dist/electron/node_modules",
+        "!dist/electron/main.js"
+    ],
+    "dependencies": {
+        "@element-plus/icons-vue": "^2.0.6",
+        "@form-create/element-ui": "^3.1.13",
+        "@popperjs/core": "^2.11.6",
+        "@vuepic/vue-datepicker": "^3.4.6",
+        "@vueup/vue-quill": "^1.0.0-beta.9",
+        "@wangeditor/editor": "^5.1.14",
+        "@wangeditor/editor-for-vue": "^5.1.12",
+        "axios": "^0.27.2",
+        "bootstrap": "^5.2.0",
+        "bootstrap-vue": "^2.22.0",
+        "core-js": "^2.6.11",
+        "cos-js-sdk-v5": "^0.5.22",
+        "echarts": "^5.3.3",
+        "element-plus": "^2.2.12",
+        "mta-h5-analysis": "^2.0.15",
+        "nprogress": "^0.2.0",
+        "path": "^0.12.7",
+        "pinia": "^2.0.17",
+        "quill-image-uploader": "^1.2.3",
+        "tim-js-sdk": "^2.10.1",
+        "tim-upload-plugin": "^1.0.5",
+        "trtc-calling-js": "^0.6.0",
+        "trtc-js-sdk": "^4.7.1",
+        "tsignaling": "^0.3.0",
+        "tweblive": "^1.3.1",
+        "update-electron-app": "^2.0.1",
+        "vue": "^3.2.37",
+        "vue-clipboard2": "^0.3.3",
+        "vue-i18n": "^9.2.2",
+        "vue-router": "^4.1.3",
+        "vuedraggable": "^4.1.0",
+        "xlsx": "^0.18.5"
+    },
+    "devDependencies": {
+        "@types/nprogress": "^0.2.0",
+        "@vitejs/plugin-vue": "^3.0.0",
+        "electron": "^20.1.1",
+        "electron-builder": "^23.3.3",
+        "electron-devtools-installer": "^3.2.0",
+        "eslint": "^8.21.0",
+        "eslint-plugin-vue": "^9.3.0",
+        "rimraf": "^3.0.2",
+        "sass": "^1.54.4",
+        "sass-loader": "^10.1.1",
+        "typescript": "^4.6.4",
+        "unplugin-auto-import": "^0.10.3",
+        "unplugin-vue-components": "^0.21.2",
+        "vite": "^3.0.0",
+        "vite-plugin-electron": "^0.9.2",
+        "vite-plugin-pages": "^0.25.0",
+        "vue-tsc": "^0.38.4"
+    },
+    "debug": {
+        "env": {
+            "VITE_DEV_SERVER_HOST": "127.0.0.1",
+            "VITE_DEV_SERVER_PORT": 1234,
+            "VITE_DEV_SERVER_API": "/api",
+            "VITE_DEV_SERVER_URL": "http://gengxin.qcole.com/"
+        }
+    },
+    "keywords": [
+        "electron",
+        "rollup",
+        "vite",
+        "vue3",
+        "vue"
+    ]
+}
